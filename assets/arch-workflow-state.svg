@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 460" width="960" height="460">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A120B"/>
+      <stop offset="50%" stop-color="#251A0F"/>
+      <stop offset="100%" stop-color="#140D07"/>
+    </linearGradient>
+    <linearGradient id="gold3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8A6421"/>
+      <stop offset="50%" stop-color="#E6C675"/>
+      <stop offset="100%" stop-color="#8A6421"/>
+    </linearGradient>
+    <linearGradient id="nodeBox" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#312214"/>
+      <stop offset="100%" stop-color="#21160C"/>
+    </linearGradient>
+    <marker id="arr3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#D4AF37"/>
+    </marker>
+  </defs>
+
+  <!-- Outer Frame -->
+  <rect x="2" y="2" width="956" height="456" rx="12" fill="url(#bg3)" stroke="url(#gold3)" stroke-width="2"/>
+  <rect x="10" y="10" width="940" height="440" rx="8" fill="none" stroke="#D4AF37" stroke-opacity="0.22" stroke-width="1"/>
+
+  <!-- Main Header -->
+  <text x="480" y="34" text-anchor="middle" fill="#F0D58C" font-family="'Noto Serif TC','Songti TC',serif" font-size="17.5" font-weight="bold" letter-spacing="1">《正覺藏》多端協同編審發布全流程 與 內外部雙階段「質疑 / 補充糾正 / 提問」狀態機</text>
+
+  <!-- ==================== TOP SECTION: 6-STEP END-TO-END PIPELINE ==================== -->
+  <rect x="22" y="48" width="916" height="156" rx="8" fill="#FFFFFF" fill-opacity="0.02" stroke="#D4AF37" stroke-opacity="0.4" stroke-width="1.2"/>
+  <text x="38" y="68" fill="#E6C675" font-family="sans-serif" font-size="13" font-weight="bold">【上篇】從 CBETA 源數據轉換、同修初標、平實導師審定簽核到 Web / Mobile 發布全鏈路流水線</text>
+
+  <!-- Step 1 -->
+  <rect x="34" y="82" width="136" height="106" rx="6" fill="url(#nodeBox)" stroke="#D4AF37" stroke-width="1.3"/>
+  <text x="102" y="102" text-anchor="middle" fill="#E6C675" font-family="sans-serif" font-size="11.5" font-weight="bold">① 清洗與四級驗證</text>
+  <text x="102" y="120" text-anchor="middle" fill="#FFF3D1" font-family="monospace,sans-serif" font-size="10.5">cbeta-markdown</text>
+  <text x="102" y="138" text-anchor="middle" fill="#D9C39E" font-family="sans-serif" font-size="10.2">剔除補編外道黑名單</text>
+  <text x="102" y="154" text-anchor="middle" fill="#D9C39E" font-family="sans-serif" font-size="10.2">轉雙軌 .md+.standoff</text>
+  <text x="102" y="170" text-anchor="middle" fill="#A8E6CF" font-family="sans-serif" font-size="10.2">通過 L0~L3 零丟失校驗</text>
+
+  <path d="M 170 135 L 186 135" fill="none" stroke="#D4AF37" stroke-width="1.6" marker-end="url(#arr3)"/>
+
+  <!-- Step 2 -->
+  <rect x="188" y="82" width="136" height="106" rx="6" fill="url(#nodeBox)" stroke="#D4AF37" stroke-width="1.3"/>
+  <text x="256" y="102" text-anchor="middle" fill="#E6C675" font-family="sans-serif" font-size="11.5" font-weight="bold">② 同修協同初標</text>
+  <text x="256" y="120" text-anchor="middle" fill="#FFF3D1" font-family="monospace,sans-serif" font-size="10.5">zhengjue-admin</text>
+  <text x="256" y="138" text-anchor="middle" fill="#D9C39E" font-family="sans-serif" font-size="10.2">破參同修居家領卷</text>
+  <text x="256" y="154" text-anchor="middle" fill="#D9C39E" font-family="sans-serif" font-size="10.2">字格間點選新式逗標</text>
+  <text x="256" y="170" text-anchor="middle" fill="#D9C39E" font-family="sans-serif" font-size="10.2">標註 8 種正覺語義字型</text>
+
+  <path d="M 324 135 L 340 135" fill="none" stroke="#D4AF37" stroke-width="1.6" marker-end="url(#arr3)"/>
+
+  <!-- Step 3 -->
+  <rect x="342" y="82" width="144" height="106" rx="6" fill="#3B2712" stroke="#F0D58C" stroke-width="1.8"/>
+  <text x="414" y="102" text-anchor="middle" fill="#FFF3D1" font-family="sans-serif" font-size="11.5" font-weight="bold">③ 平實導師終審簽核</text>
+  <text x="414" y="120" text-anchor="middle" fill="#F0D58C" font-family="monospace,sans-serif" font-size="10.5">admin · 導師大字號台</text>
+  <text x="414" y="138" text-anchor="middle" fill="#FFF3D1" font-family="sans-serif" font-size="10.2">對比大正藏錯誤斷句</text>
+  <text x="414" y="154" text-anchor="middle" fill="#FFF3D1" font-family="sans-serif" font-size="10.2">單鍵微調逗標與簽核</text>
+  <text x="414" y="170" text-anchor="middle" fill="#E6C675" font-family="sans-serif" font-size="10.2">劃詞撰寫部派/偽經辨正</text>
+
+  <path d="M 486 135 L 502 135" fill="none" stroke="#D4AF37" stroke-width="1.6" marker-end="url(#arr3)"/>
+
+  <!-- Step 4 -->
+  <rect x="504" y="82" width="136" height="106" rx="6" fill="url(#nodeBox)" stroke="#D4AF37" stroke-width="1.3"/>
+  <text x="572" y="102" text-anchor="middle" fill="#E6C675" font-family="sans-serif" font-size="11.5" font-weight="bold">④ Git 簽名持久化</text>
+  <text x="572" y="120" text-anchor="middle" fill="#FFF3D1" font-family="monospace,sans-serif" font-size="10.5">zhengjue-corpus</text>
+  <text x="572" y="138" text-anchor="middle" fill="#D9C39E" font-family="sans-serif" font-size="10.2">自動重算並校驗哈希</text>
+  <text x="572" y="154" text-anchor="middle" fill="#D9C39E" font-family="sans-serif" font-size="10.2">寫入導師簽核 Commit</text>
+  <text x="572" y="170" text-anchor="middle" fill="#D9C39E" font-family="sans-serif" font-size="10.2">構建繁簡索引與離線包</text>
+
+  <path d="M 640 135 L 656 135" fill="none" stroke="#D4AF37" stroke-width="1.6" marker-end="url(#arr3)"/>
+
+  <!-- Step 5 -->
+  <rect x="658" y="82" width="132" height="106" rx="6" fill="url(#nodeBox)" stroke="#D4AF37" stroke-width="1.3"/>
+  <text x="724" y="102" text-anchor="middle" fill="#E6C675" font-family="sans-serif" font-size="11.5" font-weight="bold">⑤ 多端秒級分發</text>
+  <text x="724" y="120" text-anchor="middle" fill="#FFF3D1" font-family="monospace,sans-serif" font-size="10.5">web &amp; mobile</text>
+  <text x="724" y="138" text-anchor="middle" fill="#D9C39E" font-family="sans-serif" font-size="10.2">Web 觸發 ISR 快取刷新</text>
+  <text x="724" y="154" text-anchor="middle" fill="#D9C39E" font-family="sans-serif" font-size="10.2">萬人在線點閱 8 種字型</text>
+  <text x="724" y="170" text-anchor="middle" fill="#D9C39E" font-family="sans-serif" font-size="10.2">手機/iPad SQLite 秒搜</text>
+
+  <path d="M 790 135 L 806 135" fill="none" stroke="#D4AF37" stroke-width="1.6" marker-end="url(#arr3)"/>
+
+  <!-- Step 6 -->
+  <rect x="808" y="82" width="118" height="106" rx="6" fill="url(#nodeBox)" stroke="#D4AF37" stroke-width="1.3"/>
+  <text x="867" y="102" text-anchor="middle" fill="#E6C675" font-family="sans-serif" font-size="11.5" font-weight="bold">⑥ 劃詞質疑共創</text>
+  <text x="867" y="120" text-anchor="middle" fill="#FFF3D1" font-family="monospace,sans-serif" font-size="10.5">內外部雙階段</text>
+  <text x="867" y="138" text-anchor="middle" fill="#D9C39E" font-family="sans-serif" font-size="10.2">提交句讀補充糾正</text>
+  <text x="867" y="154" text-anchor="middle" fill="#D9C39E" font-family="sans-serif" font-size="10.2">或法義質疑/相關提問</text>
+  <text x="867" y="170" text-anchor="middle" fill="#E6C675" font-family="sans-serif" font-size="10.2">進入下篇審校狀態機</text>
+
+  <!-- ==================== BOTTOM SECTION: DUAL-STAGE CONTRIBUTION STATE MACHINE ==================== -->
+  <rect x="22" y="218" width="916" height="220" rx="8" fill="#FFFFFF" fill-opacity="0.02" stroke="#D4AF37" stroke-opacity="0.4" stroke-width="1.2"/>
+  <text x="38" y="240" fill="#E6C675" font-family="sans-serif" font-size="13" font-weight="bold">【下篇】「前期系統內同修開放 → 後期全社會公眾公開」之質疑 / 補充糾正 / 提問處理狀態機</text>
+
+  <!-- Entry Node -->
+  <rect x="36" y="286" width="176" height="86" rx="6" fill="url(#nodeBox)" stroke="#D4AF37" stroke-width="1.4"/>
+  <text x="124" y="308" text-anchor="middle" fill="#FFF3D1" font-family="sans-serif" font-size="12" font-weight="bold">1. 讀者/同修劃詞提交</text>
+  <text x="124" y="326" text-anchor="middle" fill="#D9C39E" font-family="sans-serif" font-size="10.8">錨定字格區間 [start, end)</text>
+  <text x="124" y="344" text-anchor="middle" fill="#E6C675" font-family="sans-serif" font-size="10.5">• 前期：INTERNAL_ONLY</text>
+  <text x="124" y="360" text-anchor="middle" fill="#A8E6CF" font-family="sans-serif" font-size="10.5">• 後期：PUBLIC_MODERATED</text>
+
+  <path d="M 212 329 L 244 329" fill="none" stroke="#D4AF37" stroke-width="1.6" marker-end="url(#arr3)"/>
+
+  <!-- Triage Node -->
+  <rect x="246" y="286" width="194" height="86" rx="6" fill="url(#nodeBox)" stroke="#C29B48" stroke-width="1.4"/>
+  <text x="343" y="308" text-anchor="middle" fill="#FFF3D1" font-family="sans-serif" font-size="12" font-weight="bold">2. 待預篩分流 (PENDING)</text>
+  <text x="343" y="326" text-anchor="middle" fill="#D9C39E" font-family="sans-serif" font-size="10.8">預設僅【提交者 + 審校後台】可見</text>
+  <text x="343" y="344" text-anchor="middle" fill="#D9C39E" font-family="sans-serif" font-size="10.5">• 語義去重（合併已有辨正問題）</text>
+  <text x="343" y="360" text-anchor="middle" fill="#FF9E9E" font-family="sans-serif" font-size="10.5">• 惡意灌水/謾罵直接歸檔隔離</text>
+
+  <!-- Branch A (Top Track: Punctuation / Text Correction) -->
+  <path d="M 440 308 L 486 286" fill="none" stroke="#D4AF37" stroke-width="1.6" marker-end="url(#arr3)"/>
+  <rect x="488" y="254" width="206" height="72" rx="6" fill="url(#nodeBox)" stroke="#D4AF37" stroke-width="1.3"/>
+  <text x="591" y="274" text-anchor="middle" fill="#E6C675" font-family="sans-serif" font-size="11.5" font-weight="bold">軌 A：補充糾正（句讀 / 文字勘誤）</text>
+  <text x="591" y="292" text-anchor="middle" fill="#D9C39E" font-family="sans-serif" font-size="10.5">附結構化標點補丁 PunctuationPatch</text>
+  <text x="591" y="309" text-anchor="middle" fill="#D9C39E" font-family="sans-serif" font-size="10.5">導師/編審老師高亮預覽標點 Diff</text>
+
+  <path d="M 694 290 L 724 290" fill="none" stroke="#D4AF37" stroke-width="1.6" marker-end="url(#arr3)"/>
+
+  <rect x="726" y="254" width="196" height="72" rx="6" fill="#1E3F2B" stroke="#4CAF50" stroke-width="1.4"/>
+  <text x="824" y="274" text-anchor="middle" fill="#E8F8EE" font-family="sans-serif" font-size="11.5" font-weight="bold">✅ 一鍵合入新版本 (MERGED)</text>
+  <text x="824" y="292" text-anchor="middle" fill="#A8E6CF" font-family="sans-serif" font-size="10.5">自動更新 .md 句讀並通過 L1 校驗</text>
+  <text x="824" y="309" text-anchor="middle" fill="#A8E6CF" font-family="sans-serif" font-size="10.5">提交者記入該卷「勘誤致謝榜」</text>
+
+  <!-- Branch B (Bottom Track: Doctrinal Questioning / Inquiry) -->
+  <path d="M 440 350 L 486 372" fill="none" stroke="#D4AF37" stroke-width="1.6" marker-end="url(#arr3)"/>
+  <rect x="488" y="346" width="206" height="76" rx="6" fill="url(#nodeBox)" stroke="#D4AF37" stroke-width="1.3"/>
+  <text x="591" y="366" text-anchor="middle" fill="#E6C675" font-family="sans-serif" font-size="11.5" font-weight="bold">軌 B：提出質疑 / 相關法義問題</text>
+  <text x="591" y="384" text-anchor="middle" fill="#D9C39E" font-family="sans-serif" font-size="10.5">分派至親教師答疑組撰寫辨正答覆</text>
+  <text x="591" y="401" text-anchor="middle" fill="#D9C39E" font-family="sans-serif" font-size="10.5">引用三乘聖教量與正覺法寶詳加辨析</text>
+
+  <path d="M 694 384 L 724 384" fill="none" stroke="#D4AF37" stroke-width="1.6" marker-end="url(#arr3)"/>
+
+  <rect x="726" y="346" width="196" height="76" rx="6" fill="#1E3F2B" stroke="#4CAF50" stroke-width="1.4"/>
+  <text x="824" y="366" text-anchor="middle" fill="#E8F8EE" font-family="sans-serif" font-size="11.5" font-weight="bold">✅ 審定並公開掛載 (PUBLISHED)</text>
+  <text x="824" y="384" text-anchor="middle" fill="#A8E6CF" font-family="sans-serif" font-size="10.5">將【大眾質疑原文 + 正覺辨正回覆】</text>
+  <text x="824" y="401" text-anchor="middle" fill="#A8E6CF" font-family="sans-serif" font-size="10.5">永久錨定展示於該段經文右側旁批欄</text>
+</svg>
