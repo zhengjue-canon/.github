@@ -41,7 +41,7 @@
 按照 <b>「開源公益與內部業務解耦、前後端與多端演進週期解耦、公網閱讀與高權限後台安全物理隔離」</b> 原則，本組織採用 <b>7 大核心倉庫 + 共享協議底座</b> 之架構設計：
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/zhengjue-canon/.github/cc9c5e4d4d02ce56f59a5103993584b9b76f798e/assets/arch-repos-topology.svg" width="100%" alt="《正覺藏》全局 7 大核心倉庫職責解耦與數據流拓撲圖" />
+  <img src="https://raw.githubusercontent.com/zhengjue-canon/.github/93f58a8d1034d3df084f93268653cc1d7b3a8472/assets/arch-repos-topology.svg" width="100%" alt="《正覺藏》全局 7 大核心倉庫職責解耦與數據流拓撲圖" />
 </div>
 
 ### 組織核心倉庫導航與邊界劃分
