@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/zhengjue-canon/.github/1bd68e842f3948f14ea8800bee456a8fd0110c8b/assets/bodhisattva-emblem.svg" width="150" height="150" alt="正覺菩薩聖像徽章" />
+<img src="https://raw.githubusercontent.com/zhengjue-canon/.github/71d678e50f22cbc11e98e19e3eae4400f32585d6/assets/canon-scripture.svg" width="180" height="165" alt="《正覺藏》大藏經典籍與朱筆句讀經卷" />
 
 # 《正覺藏》數位藏經工程 (Zhengjue Canon)
 
