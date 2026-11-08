@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/zhengjue-canon/.github/71d678e50f22cbc11e98e19e3eae4400f32585d6/assets/canon-scripture.svg" width="180" height="165" alt="《正覺藏》大藏經典籍與朱筆句讀經卷" />
+<img src="https://raw.githubusercontent.com/zhengjue-canon/.github/8ddd1e3d4d8ff64abd1b64774e10ceb231ee20c2/assets/canon-scripture.svg" width="200" height="162" alt="《正覺藏》大藏經典籍與朱筆句讀經卷" />
 
 # 《正覺藏》數位藏經工程 (Zhengjue Canon)
 
