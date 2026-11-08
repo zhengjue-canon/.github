@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 220" width="960" height="220">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1E130A"/>
+      <stop offset="50%" stop-color="#2E1D0E"/>
+      <stop offset="100%" stop-color="#180F07"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#E6C365"/>
+      <stop offset="50%" stop-color="#FFF0A8"/>
+      <stop offset="100%" stop-color="#C99E3B"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="220" rx="14" fill="url(#bg)"/>
+  <rect x="6" y="6" width="948" height="208" rx="10" fill="none" stroke="url(#gold)" stroke-width="1.5" stroke-opacity="0.6"/>
+  <g transform="translate(95, 110)" stroke="url(#gold)" fill="none" opacity="0.85">
+    <circle r="58" stroke-width="3"/>
+    <circle r="48" stroke-width="1.2" stroke-dasharray="4 3"/>
+    <circle r="14" stroke-width="2.5" fill="#2E1D0E"/>
+    <line x1="0" y1="-58" x2="0" y2="58" stroke-width="2"/>
+    <line x1="-58" y1="0" x2="58" y2="0" stroke-width="2"/>
+    <line x1="-41" y1="-41" x2="41" y2="41" stroke-width="2"/>
+    <line x1="-41" y1="41" x2="41" y2="-41" stroke-width="2"/>
+  </g>
+  <text x="185" y="88" fill="url(#gold)" font-family="Noto Serif CJK TC, Songti TC, PMingLiU, serif" font-size="38" font-weight="bold" letter-spacing="4">《正覺藏》數位藏經工程 · Zhengjue Canon</text>
+  <text x="187" y="132" fill="#E8D8B9" font-family="Noto Serif CJK TC, Songti TC, serif" font-size="18" letter-spacing="2">正本清源 · 重新句讀審定 · 辨正偽經偽論 · 弘傳如來藏三乘菩提妙法</text>
+  <text x="187" y="168" fill="#B59B6D" font-family="Noto Sans CJK TC, sans-serif" font-size="14" letter-spacing="1.5">佛教復興三大志業：宣演三乘正法與出版法寶 ｜ 編纂審定《正覺大藏經》 ｜ 建立正覺祖庭</text>
+</svg>
