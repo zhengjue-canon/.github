@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 500" width="960" height="500">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A120B"/>
+      <stop offset="50%" stop-color="#251A0F"/>
+      <stop offset="100%" stop-color="#140D07"/>
+    </linearGradient>
+    <linearGradient id="gold2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8A6421"/>
+      <stop offset="50%" stop-color="#E6C675"/>
+      <stop offset="100%" stop-color="#8A6421"/>
+    </linearGradient>
+    <linearGradient id="stepBox" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#312214"/>
+      <stop offset="100%" stop-color="#21160C"/>
+    </linearGradient>
+    <marker id="arrG" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#D4AF37"/>
+    </marker>
+    <marker id="arrRed" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#D9534F"/>
+    </marker>
+  </defs>
+
+  <!-- Outer Frame -->
+  <rect x="2" y="2" width="956" height="496" rx="12" fill="url(#bg2)" stroke="url(#gold2)" stroke-width="2"/>
+  <rect x="10" y="10" width="940" height="480" rx="8" fill="none" stroke="#D4AF37" stroke-opacity="0.22" stroke-width="1"/>
+
+  <!-- Main Title -->
+  <text x="480" y="35" text-anchor="middle" fill="#F0D58C" font-family="'Noto Serif TC','Songti TC',serif" font-size="17.5" font-weight="bold" letter-spacing="1">cbeta-markdown 開源底座：四級零丟失形式化驗證 與 上游持續發版三路變基架構</text>
+
+  <!-- ==================== LEFT PANEL: 4-LEVEL ZERO-LOSS VERIFICATION ==================== -->
+  <rect x="22" y="50" width="450" height="426" rx="8" fill="#FFFFFF" fill-opacity="0.02" stroke="#D4AF37" stroke-opacity="0.4" stroke-width="1.2"/>
+  <text x="247" y="72" text-anchor="middle" fill="#E6C675" font-family="sans-serif" font-size="13.5" font-weight="bold">【左翼】L0 ~ L3 四級零丟失形式化驗證流水線（一字一符零容忍）</text>
+
+  <!-- L0 -->
+  <rect x="36" y="86" width="300" height="64" rx="6" fill="url(#stepBox)" stroke="#D4AF37" stroke-width="1.3"/>
+  <text x="48" y="105" fill="#FFF3D1" font-family="sans-serif" font-size="12.5" font-weight="bold">L0：Fail-Closed 窮盡式 AST 狀態機</text>
+  <text x="48" y="123" fill="#D9C39E" font-family="sans-serif" font-size="11">• 全標籤與屬性白名單核銷帳本（拒絕靜默忽略）</text>
+  <text x="48" y="140" fill="#D9C39E" font-family="sans-serif" font-size="11">• 產出雙軌：fascicle.md + fascicle.standoff.json</text>
+  <path d="M 336 118 L 364 118" fill="none" stroke="#D9534F" stroke-width="1.5" marker-end="url(#arrRed)"/>
+  <rect x="366" y="94" width="94" height="48" rx="4" fill="#3B1A1A" stroke="#D9534F" stroke-width="1"/>
+  <text x="413" y="114" text-anchor="middle" fill="#FFB3B3" font-family="sans-serif" font-size="10.5" font-weight="bold">未知標籤/屬性</text>
+  <text x="413" y="131" text-anchor="middle" fill="#FF8080" font-family="sans-serif" font-size="10">立即報錯阻斷</text>
+
+  <path d="M 186 150 L 186 168" fill="none" stroke="#D4AF37" stroke-width="1.6" marker-end="url(#arrG)"/>
+
+  <!-- L1 -->
+  <rect x="36" y="170" width="300" height="64" rx="6" fill="url(#stepBox)" stroke="#D4AF37" stroke-width="1.3"/>
+  <text x="48" y="189" fill="#FFF3D1" font-family="sans-serif" font-size="12.5" font-weight="bold">L1：正文與夾注純字流 SHA-256 守恆校驗</text>
+  <text x="48" y="207" fill="#D9C39E" font-family="sans-serif" font-size="11">• 獨立提取器比對 S_main 與 S_inline 字數與哈希</text>
+  <text x="48" y="224" fill="#D9C39E" font-family="sans-serif" font-size="11">• 禁 NFKC 歸一化，100% 保留「說/説」「真/眞」原碼位</text>
+  <path d="M 336 202 L 364 202" fill="none" stroke="#D9534F" stroke-width="1.5" marker-end="url(#arrRed)"/>
+  <rect x="366" y="178" width="94" height="48" rx="4" fill="#3B1A1A" stroke="#D9534F" stroke-width="1"/>
+  <text x="413" y="198" text-anchor="middle" fill="#FFB3B3" font-family="sans-serif" font-size="10.5" font-weight="bold">哪怕 1 字差異</text>
+  <text x="413" y="215" text-anchor="middle" fill="#FF8080" font-family="sans-serif" font-size="10">二分哈希定位行號</text>
+
+  <path d="M 186 234 L 186 252" fill="none" stroke="#D4AF37" stroke-width="1.6" marker-end="url(#arrG)"/>
+
+  <!-- L2 -->
+  <rect x="36" y="254" width="300" height="64" rx="6" fill="url(#stepBox)" stroke="#D4AF37" stroke-width="1.3"/>
+  <text x="48" y="273" fill="#FFF3D1" font-family="sans-serif" font-size="12.5" font-weight="bold">L2：結構、座標、校勘記與舊標點守恆帳本</text>
+  <text x="48" y="291" fill="#D9C39E" font-family="sans-serif" font-size="11">• 核對 &lt;pb&gt;/&lt;lb&gt;、::keping 科判、:::gatha 偈頌句數</text>
+  <text x="48" y="308" fill="#D9C39E" font-family="sans-serif" font-size="11">• 反查 &lt;app&gt; [start,end) 100% 等於 &lt;lem&gt; 底本原文</text>
+  <path d="M 336 286 L 364 286" fill="none" stroke="#D9534F" stroke-width="1.5" marker-end="url(#arrRed)"/>
+  <rect x="366" y="262" width="94" height="48" rx="4" fill="#3B1A1A" stroke="#D9534F" stroke-width="1"/>
+  <text x="413" y="282" text-anchor="middle" fill="#FFB3B3" font-family="sans-serif" font-size="10.5" font-weight="bold">數量或錨點偏移</text>
+  <text x="413" y="299" text-anchor="middle" fill="#FF8080" font-family="sans-serif" font-size="10">輸出差異帳本報錯</text>
+
+  <path d="M 186 318 L 186 336" fill="none" stroke="#D4AF37" stroke-width="1.6" marker-end="url(#arrG)"/>
+
+  <!-- L3 -->
+  <rect x="36" y="338" width="300" height="64" rx="6" fill="url(#stepBox)" stroke="#D4AF37" stroke-width="1.3"/>
+  <text x="48" y="357" fill="#FFF3D1" font-family="sans-serif" font-size="12.5" font-weight="bold">L3：雙向往返同構驗證（終極數學證明）</text>
+  <text x="48" y="375" fill="#D9C39E" font-family="sans-serif" font-size="11">• 逆向編譯器：md2cbeta(md, standoff) → XML&apos;</text>
+  <text x="48" y="392" fill="#D9C39E" font-family="sans-serif" font-size="11">• 斷言 CanonicalAST(XML&apos;) === CanonicalAST(XML)</text>
+  <path d="M 336 370 L 364 370" fill="none" stroke="#D9534F" stroke-width="1.5" marker-end="url(#arrRed)"/>
+  <rect x="366" y="346" width="94" height="48" rx="4" fill="#3B1A1A" stroke="#D9534F" stroke-width="1"/>
+  <text x="413" y="366" text-anchor="middle" fill="#FFB3B3" font-family="sans-serif" font-size="10.5" font-weight="bold">AST 樹差異</text>
+  <text x="413" y="383" text-anchor="middle" fill="#FF8080" font-family="sans-serif" font-size="10">Tree Diff 阻斷</text>
+
+  <path d="M 186 402 L 186 420" fill="none" stroke="#D4AF37" stroke-width="1.6" marker-end="url(#arrG)"/>
+
+  <!-- Pass Badge -->
+  <rect x="36" y="422" width="424" height="42" rx="6" fill="#1E3F2B" stroke="#4CAF50" stroke-width="1.4"/>
+  <text x="248" y="441" text-anchor="middle" fill="#E8F8EE" font-family="sans-serif" font-size="12.5" font-weight="bold">✅ 四級驗證 100% 通過 → 簽發零丟失哈希憑證 (integrity-manifest.json)</text>
+  <text x="248" y="457" text-anchor="middle" fill="#A8E6CF" font-family="sans-serif" font-size="10.5">Node worker_threads 多核並行：全藏 5,500+ 部經全量驗證約 40 秒，增量驗證 &lt; 1 秒</text>
+
+  <!-- ==================== RIGHT PANEL: 3-WAY OFFSET REBASE ==================== -->
+  <rect x="488" y="50" width="450" height="426" rx="8" fill="#FFFFFF" fill-opacity="0.02" stroke="#D4AF37" stroke-opacity="0.4" stroke-width="1.2"/>
+  <text x="713" y="72" text-anchor="middle" fill="#E6C675" font-family="sans-serif" font-size="13.5" font-weight="bold">【右翼】上游 CBETA 持續發版 · 三路字符偏移變基引擎 (rebase)</text>
+
+  <!-- Three Inputs -->
+  <rect x="502" y="86" width="132" height="54" rx="5" fill="#23180E" stroke="#9E8256" stroke-width="1.2"/>
+  <text x="568" y="108" text-anchor="middle" fill="#E6C675" font-family="sans-serif" font-size="11.5" font-weight="bold">CBETA XML v1</text>
+  <text x="568" y="126" text-anchor="middle" fill="#B59B72" font-family="sans-serif" font-size="10.5">舊版基準底本 (Lock)</text>
+
+  <rect x="647" y="86" width="132" height="54" rx="5" fill="#23180E" stroke="#D4AF37" stroke-width="1.4"/>
+  <text x="713" y="108" text-anchor="middle" fill="#FFF3D1" font-family="sans-serif" font-size="11.5" font-weight="bold">CBETA XML v2</text>
+  <text x="713" y="126" text-anchor="middle" fill="#D9C39E" font-family="sans-serif" font-size="10.5">上游新發版修訂底本</text>
+
+  <rect x="792" y="86" width="132" height="54" rx="5" fill="#2E2010" stroke="#D4AF37" stroke-width="1.4"/>
+  <text x="858" y="108" text-anchor="middle" fill="#FFF3D1" font-family="sans-serif" font-size="11.5" font-weight="bold">《正覺藏》v1</text>
+  <text x="858" y="126" text-anchor="middle" fill="#E6C675" font-family="sans-serif" font-size="10.5">已審定新句讀 + 導師批注</text>
+
+  <path d="M 568 140 L 650 168" fill="none" stroke="#D4AF37" stroke-width="1.4" marker-end="url(#arrG)"/>
+  <path d="M 713 140 L 713 168" fill="none" stroke="#D4AF37" stroke-width="1.4" marker-end="url(#arrG)"/>
+  <path d="M 858 140 L 775 168" fill="none" stroke="#D4AF37" stroke-width="1.4" marker-end="url(#arrG)"/>
+
+  <!-- Step 1: Fast Filter & Metadata Hot-Swap -->
+  <rect x="502" y="170" width="422" height="64" rx="6" fill="url(#stepBox)" stroke="#C29B48" stroke-width="1.3"/>
+  <text x="516" y="190" fill="#FFF3D1" font-family="sans-serif" font-size="12.5" font-weight="bold">1. 第一/二級分流：未變更跳過 &amp; 非正文修訂零偏移熱更新（佔 99%+）</text>
+  <text x="516" y="208" fill="#D9C39E" font-family="sans-serif" font-size="11">• 若上游僅修訂校勘記 &lt;app&gt; 或頭部信息，而正文字流 S_main 哈希未變：</text>
+  <text x="516" y="225" fill="#E6C675" font-family="sans-serif" font-size="11">→ 全卷字格索引 0 偏移！直接更新伴生校勘圖層，正覺新句讀與批注 100% 不動</text>
+
+  <path d="M 713 234 L 713 252" fill="none" stroke="#D4AF37" stroke-width="1.6" marker-end="url(#arrG)"/>
+
+  <!-- Step 2: Myers Diff & Coordinate Transfer -->
+  <rect x="502" y="254" width="422" height="72" rx="6" fill="url(#stepBox)" stroke="#D4AF37" stroke-width="1.3"/>
+  <text x="516" y="274" fill="#FFF3D1" font-family="sans-serif" font-size="12.5" font-weight="bold">2. 第三級（上游增刪改正文漢字）：Myers 差分與座標映射 φ(i)</text>
+  <text x="516" y="292" fill="#D9C39E" font-family="sans-serif" font-size="11">• 對 S_main(v1) 與 S_main(v2) 執行字符級差分，構造單調位移函數 φ: N_v1 → N_v2</text>
+  <text x="516" y="309" fill="#D9C39E" font-family="sans-serif" font-size="11">• 自動平移 .md 中的正覺新逗標與 8 種字型區間至新字格位置 φ(i)</text>
+  <text x="516" y="322" fill="#D9C39E" font-family="sans-serif" font-size="11">• 透過區間樹自動將導師批注與大眾問答區間 [start, end) 映射為 [φ(start), φ(end))</text>
+
+  <path d="M 713 326 L 713 344" fill="none" stroke="#D4AF37" stroke-width="1.6" marker-end="url(#arrG)"/>
+
+  <!-- Step 3: Conflict Isolation -->
+  <rect x="502" y="346" width="422" height="58" rx="6" fill="url(#stepBox)" stroke="#C29B48" stroke-width="1.3"/>
+  <text x="516" y="366" fill="#FFF3D1" font-family="sans-serif" font-size="12.5" font-weight="bold">3. 重疊區間精準衝突隔離（Conflict Flagging）</text>
+  <text x="516" y="384" fill="#D9C39E" font-family="sans-serif" font-size="11">• 僅當上游修改字 k 恰好落在某條導師批注區間 [start, end) 內部時標記衝突</text>
+  <text x="516" y="399" fill="#E6C675" font-family="sans-serif" font-size="11">• 推送至 zhengjue-admin「三欄變基審閱台」由編審老師一鍵確認</text>
+
+  <path d="M 713 404 L 713 420" fill="none" stroke="#D4AF37" stroke-width="1.6" marker-end="url(#arrG)"/>
+
+  <!-- Rebase Output -->
+  <rect x="502" y="422" width="422" height="42" rx="6" fill="#1E3F2B" stroke="#4CAF50" stroke-width="1.4"/>
+  <text x="713" y="441" text-anchor="middle" fill="#E8F8EE" font-family="sans-serif" font-size="12.5" font-weight="bold">✅ 產出《正覺藏》v2：同步上游底本修正 + 100% 保留正覺句讀與導師批注</text>
+  <text x="713" y="457" text-anchor="middle" fill="#A8E6CF" font-family="sans-serif" font-size="10.5">更新 cbeta-lock.json 基準版本並重新執行左翼 L0~L3 四級零丟失驗證</text>
+</svg>
