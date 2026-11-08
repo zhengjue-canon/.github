@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 590" width="960" height="590">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1A120B"/>
+      <stop offset="50%" stop-color="#261A10"/>
+      <stop offset="100%" stop-color="#140D07"/>
+    </linearGradient>
+    <linearGradient id="goldBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8A6421"/>
+      <stop offset="50%" stop-color="#E6C675"/>
+      <stop offset="100%" stop-color="#8A6421"/>
+    </linearGradient>
+    <linearGradient id="cardDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2D2013"/>
+      <stop offset="100%" stop-color="#1F160C"/>
+    </linearGradient>
+    <linearGradient id="cardHighlight" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#3A2814"/>
+      <stop offset="100%" stop-color="#25190C"/>
+    </linearGradient>
+    <marker id="arrowGold" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#D4AF37"/>
+    </marker>
+    <marker id="arrowMuted" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#9E8256"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect x="2" y="2" width="956" height="586" rx="12" fill="url(#bgGrad)" stroke="url(#goldBorder)" stroke-width="2"/>
+  <rect x="10" y="10" width="940" height="570" rx="8" fill="none" stroke="#D4AF37" stroke-opacity="0.22" stroke-width="1"/>
+
+  <!-- Header -->
+  <text x="480" y="36" text-anchor="middle" fill="#F0D58C" font-family="'Noto Serif TC','Songti TC','PMingLiU',serif" font-size="18" font-weight="bold" letter-spacing="1.5">《正覺藏》全局 7 大核心倉庫職責解耦與數據流拓撲圖 (zhengjue-canon)</text>
+
+  <!-- Tier 0: Upstream -->
+  <rect x="250" y="50" width="460" height="54" rx="6" fill="#23180E" stroke="#8C6D3F" stroke-width="1.2" stroke-dasharray="4 2"/>
+  <text x="480" y="71" text-anchor="middle" fill="#D8BA73" font-family="sans-serif" font-size="13" font-weight="bold">外部上游數據源（持續發版演進） · cbeta-org/xml-p5</text>
+  <text x="480" y="91" text-anchor="middle" fill="#B59B72" font-family="sans-serif" font-size="11.5">TEI-P5 XML 經卷源碼 (約 2.5GB)  +  cbeta_gaiji 缺字庫  +  宋元明麗 12 版本校勘元數據</text>
+
+  <!-- Layer 1: Open Source & Core SDK -->
+  <rect x="26" y="124" width="908" height="104" rx="8" fill="#FFFFFF" fill-opacity="0.02" stroke="#D4AF37" stroke-opacity="0.35" stroke-width="1"/>
+  <text x="40" y="142" fill="#E6C675" font-family="sans-serif" font-size="12" font-weight="bold">第一層：開源標準與跨端核心底座（Public / MIT 開源）</text>
+
+  <!-- Repo 1: cbeta-markdown -->
+  <rect x="42" y="150" width="426" height="68" rx="6" fill="url(#cardHighlight)" stroke="#D4AF37" stroke-width="1.5"/>
+  <rect x="372" y="156" width="86" height="18" rx="3" fill="#2E5B3C"/>
+  <text x="415" y="169" text-anchor="middle" fill="#E8F8EE" font-family="sans-serif" font-size="10.5" font-weight="bold">Public · MIT</text>
+  <text x="56" y="170" fill="#FFF3D1" font-family="monospace,sans-serif" font-size="14" font-weight="bold">1. cbeta-markdown（開源轉換與驗證引擎）</text>
+  <text x="56" y="190" fill="#D9C39E" font-family="sans-serif" font-size="11.5">• xml2md 正向編譯 &amp; md2xml 逆向同構還原  • L0~L3 四級零丟失驗證器</text>
+  <text x="56" y="207" fill="#D9C39E" font-family="sans-serif" font-size="11.5">• rebase 上游 CBETA 持續發版三路字符偏移變基引擎（零正覺業務耦合）</text>
+
+  <!-- Repo 2: canon-core -->
+  <rect x="492" y="150" width="426" height="68" rx="6" fill="url(#cardHighlight)" stroke="#D4AF37" stroke-width="1.5"/>
+  <rect x="822" y="156" width="86" height="18" rx="3" fill="#2E5B3C"/>
+  <text x="865" y="169" text-anchor="middle" fill="#E8F8EE" font-family="sans-serif" font-size="10.5" font-weight="bold">Public · SDK</text>
+  <text x="506" y="170" fill="#FFF3D1" font-family="monospace,sans-serif" font-size="14" font-weight="bold">2. canon-core（跨四端共享核心協議與算法包）</text>
+  <text x="506" y="190" fill="#D9C39E" font-family="sans-serif" font-size="11.5">• @zhengjue/standoff：CJK 擴展區安全 CodePointString 尋址與區間樹</text>
+  <text x="506" y="207" fill="#D9C39E" font-family="sans-serif" font-size="11.5">• @zhengjue/schema &amp; api-client：四部判教、8 種字型與 OpenAPI 契約</text>
+
+  <!-- Layer 2: Corpus Repo -->
+  <rect x="26" y="248" width="908" height="86" rx="8" fill="#FFFFFF" fill-opacity="0.02" stroke="#D4AF37" stroke-opacity="0.35" stroke-width="1"/>
+  <text x="40" y="266" fill="#E6C675" font-family="sans-serif" font-size="12" font-weight="bold">第二層：千年數位藏經資產主倉（純文本雙軌制 Git 語料庫，與業務代碼物理隔離）</text>
+
+  <!-- Repo 3: zhengjue-corpus -->
+  <rect x="130" y="274" width="700" height="52" rx="6" fill="url(#cardDark)" stroke="#D4AF37" stroke-width="1.5"/>
+  <rect x="706" y="280" width="114" height="18" rx="3" fill="#5A4218"/>
+  <text x="763" y="293" text-anchor="middle" fill="#F7E3AA" font-family="sans-serif" font-size="10.5" font-weight="bold">Public Read / 受控簽核</text>
+  <text x="146" y="294" fill="#FFF3D1" font-family="monospace,sans-serif" font-size="14" font-weight="bold">3. zhengjue-corpus（《正覺藏》雙軌 Markdown 語料主倉）</text>
+  <text x="146" y="314" fill="#D9C39E" font-family="sans-serif" font-size="11.5">catalog/ 四部判教目錄與剔除黑名單  |  canons/**/*.md + *.standoff.json  |  cbeta-lock.json &amp; integrity-manifest.json</text>
+
+  <!-- Layer 3: Backend Service -->
+  <rect x="26" y="354" width="908" height="86" rx="8" fill="#FFFFFF" fill-opacity="0.02" stroke="#D4AF37" stroke-opacity="0.35" stroke-width="1"/>
+  <text x="40" y="372" fill="#E6C675" font-family="sans-serif" font-size="12" font-weight="bold">第三層：後端核心服務與檢索引擎調度中心（集中收斂數據庫、全文檢索與 Git 簽名私鑰）</text>
+
+  <!-- Repo 4: zhengjue-server -->
+  <rect x="130" y="380" width="700" height="52" rx="6" fill="url(#cardDark)" stroke="#C29B48" stroke-width="1.5"/>
+  <rect x="726" y="386" width="94" height="18" rx="3" fill="#4A2E2B"/>
+  <text x="773" y="399" text-anchor="middle" fill="#FADBD8" font-family="sans-serif" font-size="10.5" font-weight="bold">Private · 核心服務</text>
+  <text x="146" y="400" fill="#FFF3D1" font-family="monospace,sans-serif" font-size="14" font-weight="bold">4. zhengjue-server（Fastify 5 + PostgreSQL 16 + Meilisearch）</text>
+  <text x="146" y="420" fill="#D9C39E" font-family="sans-serif" font-size="11.5">PostgreSQL int4range 空間區間索引 (0.1ms 旁批查詢)  |  opencc-js 繁簡雙向檢索  |  初標→導師審定狀態機  |  質疑預篩分流</text>
+
+  <!-- Layer 4: Three Client Repos -->
+  <rect x="26" y="460" width="908" height="110" rx="8" fill="#FFFFFF" fill-opacity="0.02" stroke="#D4AF37" stroke-opacity="0.35" stroke-width="1"/>
+  <text x="40" y="478" fill="#E6C675" font-family="sans-serif" font-size="12" font-weight="bold">第四層：三大終端應用倉（前後端分離 · 桌面審定管理端 / 官網公開閱讀端 / 移動與平板離線端）</text>
+
+  <!-- Repo 5: zhengjue-admin -->
+  <rect x="42" y="486" width="284" height="74" rx="6" fill="url(#cardDark)" stroke="#C29B48" stroke-width="1.3"/>
+  <rect x="242" y="492" width="76" height="16" rx="3" fill="#4A2E2B"/>
+  <text x="280" y="504" text-anchor="middle" fill="#FADBD8" font-family="sans-serif" font-size="10" font-weight="bold">Private 內網</text>
+  <text x="54" y="505" fill="#FFF3D1" font-family="monospace,sans-serif" font-size="13" font-weight="bold">5. zhengjue-admin</text>
+  <text x="54" y="522" fill="#E6C675" font-family="sans-serif" font-size="11" font-weight="bold">編審工作台 Studio + 管理後台 Admin</text>
+  <text x="54" y="538" fill="#D9C39E" font-family="sans-serif" font-size="10.8">• 同修字格初標 &amp; 導師大字號極簡審定台</text>
+  <text x="54" y="553" fill="#D9C39E" font-family="sans-serif" font-size="10.8">• 劃詞辨正批注器 &amp; 大眾質疑審校答覆台</text>
+
+  <!-- Repo 6: zhengjue-web -->
+  <rect x="338" y="486" width="284" height="74" rx="6" fill="url(#cardDark)" stroke="#D4AF37" stroke-width="1.3"/>
+  <rect x="542" y="492" width="72" height="16" rx="3" fill="#2E5B3C"/>
+  <text x="578" y="504" text-anchor="middle" fill="#E8F8EE" font-family="sans-serif" font-size="10" font-weight="bold">Public 公網</text>
+  <text x="350" y="505" fill="#FFF3D1" font-family="monospace,sans-serif" font-size="13" font-weight="bold">6. zhengjue-web</text>
+  <text x="350" y="522" fill="#E6C675" font-family="sans-serif" font-size="11" font-weight="bold">公開在線藏經閣與眾包考據 Web 端</text>
+  <text x="350" y="538" fill="#D9C39E" font-family="sans-serif" font-size="10.8">• Next.js 15 SSG/ISR 萬人高併發點閱</text>
+  <text x="350" y="553" fill="#D9C39E" font-family="sans-serif" font-size="10.8">• 8 種字型還原、新舊句讀對比、劃詞質疑</text>
+
+  <!-- Repo 7: zhengjue-mobile -->
+  <rect x="634" y="486" width="284" height="74" rx="6" fill="url(#cardDark)" stroke="#C29B48" stroke-width="1.3"/>
+  <rect x="830" y="492" width="80" height="16" rx="3" fill="#284B63"/>
+  <text x="870" y="504" text-anchor="middle" fill="#E3F2FD" font-family="sans-serif" font-size="10" font-weight="bold">iOS / Android</text>
+  <text x="646" y="505" fill="#FFF3D1" font-family="monospace,sans-serif" font-size="13" font-weight="bold">7. zhengjue-mobile</text>
+  <text x="646" y="522" fill="#E6C675" font-family="sans-serif" font-size="11" font-weight="bold">手機與 iPad 平板離線精讀/審閱 App</text>
+  <text x="646" y="538" fill="#D9C39E" font-family="sans-serif" font-size="10.8">• Expo + SQLite FTS5 本地離線全藏秒搜</text>
+  <text x="646" y="553" fill="#D9C39E" font-family="sans-serif" font-size="10.8">• 護眼宣紙閱讀、筆記同步、iPad 觸控審閱</text>
+
+  <!-- Arrows -->
+  <!-- Upstream -> Repo 1 -->
+  <path d="M 360 104 L 255 148" fill="none" stroke="#D4AF37" stroke-width="1.8" marker-end="url(#arrowGold)"/>
+  <text x="242" y="120" fill="#E6C675" font-family="sans-serif" font-size="10.5">持續發版同步 &amp; 三路變基</text>
+
+  <!-- Repo 1 -> Repo 3 -->
+  <path d="M 255 218 L 320 272" fill="none" stroke="#D4AF37" stroke-width="1.8" marker-end="url(#arrowGold)"/>
+  <text x="175" y="244" fill="#E6C675" font-family="sans-serif" font-size="10.5">產出與四級驗證 100% 無損語料</text>
+
+  <!-- Repo 2 -> All (Shared SDK) -->
+  <path d="M 492 184 L 470 184" fill="none" stroke="#9E8256" stroke-width="1.4" stroke-dasharray="3 2" marker-end="url(#arrowMuted)"/>
+  <path d="M 705 218 L 620 272" fill="none" stroke="#9E8256" stroke-width="1.4" stroke-dasharray="3 2" marker-end="url(#arrowMuted)"/>
+  <text x="655" y="244" fill="#B59B72" font-family="sans-serif" font-size="10.5">共享 @zhengjue/* 協議與字格算法</text>
+
+  <!-- Repo 3 <-> Repo 4 -->
+  <path d="M 480 326 L 480 378" fill="none" stroke="#D4AF37" stroke-width="1.8" marker-start="url(#arrowGold)" marker-end="url(#arrowGold)"/>
+  <text x="492" y="348" fill="#E6C675" font-family="sans-serif" font-size="10.5">Git 簽核雙向同步 / 離線快照構建</text>
+
+  <!-- Repo 4 <-> Clients (5, 6, 7) -->
+  <path d="M 310 432 L 184 484" fill="none" stroke="#D4AF37" stroke-width="1.6" marker-end="url(#arrowGold)"/>
+  <path d="M 480 432 L 480 484" fill="none" stroke="#D4AF37" stroke-width="1.6" marker-end="url(#arrowGold)"/>
+  <path d="M 650 432 L 776 484" fill="none" stroke="#D4AF37" stroke-width="1.6" marker-end="url(#arrowGold)"/>
+  <text x="488" y="452" fill="#E6C675" font-family="sans-serif" font-size="10.5">OpenAPI 3.1 / ISR 快取刷新 / 離線增量包分發</text>
+</svg>
