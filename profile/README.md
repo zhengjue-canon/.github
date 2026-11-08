@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/zhengjue-canon/.github/main/assets/bodhisattva-emblem.svg" width="140" height="140" alt="正覺菩薩聖像" />
+<img src="https://raw.githubusercontent.com/zhengjue-canon/.github/1bd68e842f3948f14ea8800bee456a8fd0110c8b/assets/bodhisattva-emblem.svg" width="150" height="150" alt="正覺菩薩聖像徽章" />
 
 # 《正覺藏》數位藏經工程 (Zhengjue Canon)
 
@@ -10,7 +10,7 @@
 [![Electronic Newsletter](https://img.shields.io/badge/正智出版社·正覺電子報-books.enlighten.org.tw-8A5A10?style=for-the-badge)](https://books.enlighten.org.tw/zh-tw/e)
 [![Architecture](https://img.shields.io/badge/底本架構-ZJ--Markdown_%2B_Standoff_JSON-2E1D0E?style=for-the-badge)](https://github.com/zhengjue-canon/zhengjue-platform)
 
-<img src="https://raw.githubusercontent.com/zhengjue-canon/.github/main/assets/banner.svg" width="100%" alt="Zhengjue Canon Banner" />
+<img src="https://raw.githubusercontent.com/zhengjue-canon/.github/7384790573a86bd2383f6f6bbc006a64934f5c10/assets/banner.svg" width="100%" alt="Zhengjue Canon Banner" />
 
 </div>
 
